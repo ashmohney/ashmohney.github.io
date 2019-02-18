@@ -1,0 +1,63 @@
+html body {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #00bcd4;
+}
+
+
+  
+.nav {
+    position: fixed;
+  
+    background-color: #2c3e50;
+    margin-bottom: 2%;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+#name-box {
+    text-align: center;
+    background-color: #00bcd4;
+    color: #fff;
+    
+}
+
+#name {
+    font-variant: small-caps;
+    margin: 0;
+}
+
+
+#title {
+    margin: 0;
+}
+
+#imgBox {
+    margin-top: 3%;
+    max-width: 150px;
+    max-height: 200px;
+    border: solid 2px #2c3e50;
+}
+
+hr {
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 4px;
+}
+
+#project-box {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+#contact-box {
+    color: #fff;
+}
+
+
+footer {
+    color: #fff;
+    font-variant: small-caps;
+    width: 100%;
+    line-height: 50%;
+}

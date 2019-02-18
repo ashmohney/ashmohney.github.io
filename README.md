@@ -1,2 +1,4 @@
 # ashmohney.github.io
-Portfolio page for Web Dev progress! 
+
+#####
+One page portfolio with an About Me, Contact,  and links to current projects. 
