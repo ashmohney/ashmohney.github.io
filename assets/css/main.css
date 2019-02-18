@@ -1,18 +1,18 @@
 html body {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #00bcd4;
+
 }
-
-
   
 .nav {
     position: fixed;
-  
     background-color: #2c3e50;
     margin-bottom: 2%;
     color: #fff;
     font-variant: small-caps;
 }
+
+
 
 #name-box {
     text-align: center;
@@ -32,11 +32,12 @@ html body {
 }
 
 #imgBox {
-    margin-top: 3%;
+    margin-top: 2%;
     max-width: 150px;
     max-height: 200px;
     border: solid 2px #2c3e50;
 }
+
 
 hr {
     padding: 0;
@@ -48,6 +49,12 @@ hr {
 #project-box {
     background-color: #fff;
     color: #2c3e50;
+    padding: 0% 2% 0% 2%;
+}
+
+.projItem {
+    border: 2px solid #2c3e50;
+    margin: 2% 5%;
 }
 
 #contact-box {
