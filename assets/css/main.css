@@ -63,6 +63,18 @@ hr {
     margin: 2% 5%;
 }
 
+#triviaBox {
+    padding-right: 2%;
+    padding-left:2%;
+}
+
+.btn-lg {
+    text-align: center;
+    background: #00bcd4;
+    color: #fff;
+}
+
+
 
 
 footer {
