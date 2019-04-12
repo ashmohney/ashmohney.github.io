@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Ash, Mohney, developer, web, full-stack">
+    <title>Ash Mohney</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
-    <link  type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">      
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- external CSS link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Ash Mohney</title>
+    <meta name="description" content="Ash Mohney is a full-stack developer.">
 </head>
 
 <body>
-<div id="nav-bar">
-    <nav class="nav pin-top" data-target="navInfo">
+
+<div class="navbar-fixed">
+    <nav>
         <div class="nav-wrapper">
             <div class="container">
-                <a href="#page-top" class="brand-logo">Ash Mohney</a>
-                
+                <a href="#about" class="brand-logo left">Ash Mohney</a>
+                <ul class="right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project-box">Projects</a></li>
+                    <li><a href="#info">Contact</a></li>
+                </ul>
             </div>
-                <div class="divider"></div>
         </div>
     </nav>
 </div>
+<br>
+<br>
 
-<div id="name-box" class="row center-align">
-    <div class="row" >
-        <div class="col l6">
-            <div class=" center-align"><span><img id="imgBox" class="circle responsive-img scale-down"  src="assets/images/IMG_0365 copy.JPG"></span>
-            </div>
-            <h4 id="name">Ash Mohney</h4>
-            <hr>
-            <h5 id="title">Full Stack Developer | Lifelong Learner</h5>
-        </div>
-        <div id="icons-area" class="col l6 m6 s12 center-align">
-
-            <hr>
-
-            <span id="icon1"><a href="https://github.com/ashmohney"></a><i class="fab fa-github fa-5x"></i></span>&nbsp
-            <span id="icon2"><a href="https://www.linkedin.com/in/ashmohney"></a><i class="fab fa-linkedin fa-5x"></i></span>  
-
-            <hr>
-          
+<div class="row-l12 center-align" >
+    <div class="aboutContainer">
+        <div class="about">
+            <img src="assets/images/IMG_0365 copy.JPG" class="headshot" />
+            <h3>Ash Mohney</h3>
+            <hr class="whiteLine" />
+            <h5 id="about-title" class="center-align">Full Stack Developer &nbsp; | &nbsp; Lifelong Learner</h5>
+            <hr class="whiteLine" />
+            <p >
+                <span id="about-contact"><a href="https://github.com/ashmohney">GitHub</a> &nbsp; | &nbsp; <a href="https://www.linkedin.com/in/ashmohney">LinkedIn</a> </span>
+            </p>
         </div>
     </div>
 </div>
 
 <div id="project-box" class="row">
+    <br>
+    <hr />
+    <h3 id="projects-title" class="center-align" >Projects:</h3>
+    <hr />
+    <div class="row">
+        <div id="burger-project" class="projItem col l8 offset-l4 m8 offset-m4 s12">
+            <div class="row center-align">
+                <h3>Burger-It-Up!</h3>
+                <p>A fun app that lets a user kepp track of the burgers they eat and want to eat. After a new burger is added, the burger is displayed where it's waiting to be devoured. Click the utensils button to devour the burger. Once devoured, the burger is then displayed with the option to delete it. Every burger entered is stored in the database until deleted.</p>
+                <ul>Tools Used:
+                        <li>HTML, CSS, Javascript, Node.js</li>
+                        <li>NPM Packages: Express.js, Handlebars, MySQL</li>
+                        <li>Custom ORM</li>
+                    <a href="https://burger-it-up.herokuapp.com/" target="_blank"><button id="linkBtn"class="waves-effect waves-light btn">Check it out</button></a>
+                </ul>
+                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/burger-it-up-img.png" alt="Picture showing the burger-it burger tracker."></span>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div id="project1" class="projItem col l8 m8 s12">
             <div class="row center-align">
@@ -59,7 +85,7 @@
                         <li>Github Version Control</li>
                     <a href="https://anightout-1548896687179.firebaseapp.com/" target="_blank"><button id="linkBtn"class="waves-effect waves-light btn">Check it out</button></a>
                 </ul>
-                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/NightInApp.png" alt="Picture showing a question and timer, called Trivia Game."></span>
+                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/NightInApp.png" alt="Picture of the A Night In app."></span>
             </div>
           
         </div>
@@ -76,7 +102,7 @@
                         <li>Github Version Control</li>
                     <a href="https://ashmohney.github.io/gif-tastic/" target="_blank"><button id="linkBtn"class="waves-effect waves-light btn">Check it out</button></a>
                 </ul>
-                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/gifTastic.png" alt="Picture showing a question and timer, called Trivia Game."></span>
+                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/gifTastic.png" alt="Picture sof gif generator."></span>
             </div>
         </div>
     </div>
@@ -91,7 +117,7 @@
                     <li>Bootstrap</li>
                     <a href="https://ashmohney.github.io/trivia-game" target="_blank"><button id="linkBtn"class="waves-effect waves-light btn">Check it out</button></a>
                 </ul>
-                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/TriviaGame.png" alt="Picture showing a question and timer, called Trivia Game."></span>
+                <span><img id="triviaBox" class="responsive-img scale-down"  src="assets/images/TriviaGame.png" alt="Picture of the Trivia Game including timer."></span>
             </div>
         </div>
     </div>   
@@ -113,28 +139,35 @@
     </div>
 </div>
 
+<div class="contact-me center-align" id="info">
+    <div class="center-align">
+        <hr />
+        <h3 class="contact-headline ">Contact</h3>
+        <hr />
+        <p class="contact-info">
+        Currently entertaining new opportunities. Please contact me:
+        </p>
+        <p>
+            <a href="mailto:ashmohney@gmail.com" class="contact-link">ashmohney@gmail.com
+            </a>
+        </p>
+    <br>
+    <p class="contact-icons">
+        <span ><a href="https://github.com/ashmohney"target="blank"><i class="fab fa-github fa-5x"></a></i></span>
+            &nbsp; &nbsp; &nbsp;
+        <span><a href="https://www.linkedin.com/in/ashmohney" target="blank"><i class="fab fa-linkedin fa-5x"></a></i></span>
+    </p>
+    <br>
+    <hr />
+</div>
 
-<footer>
-    <div class="footer-copyright">
-        <div class="container center-align">
-        &copy 2019 Ash Mohney
-        </div>
-    </div>
-</footer>
+    <!-- Google jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- javascript  -->
+<script type="text/javascript" src="assets/javascript/main.js"></script>
 
-    
-    
-     <!-- Google jQuery CDN -->
-     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- javascript  -->
-    <script type="text/javascript" src="assets/javascript/main.js"></script>
-
-
-
-
-    <!-- <i class="fas fa-long-arrow-alt-left"></i><i class="fas fa-slash"></i><i class="fas fa-slash"></i><i class="fas fa-slash"></i><i class="fas fa-slash"></i><i class="fas fa-slash"></i><i class="fas fa-long-arrow-alt-right"></i> -->
 </body>
 </html>
