@@ -87,8 +87,13 @@ a:hover {
     #cee4f8
   );
   color: #2c3e50;
-  padding: 0% 2% 0% 10%;
+  padding: 0% 2% 0% 4%;
   margin-bottom: 0;
+}
+.project-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .projItem {
